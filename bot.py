@@ -38,11 +38,11 @@ i can convert image to pdf
 This bot created by {BOTBY}""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/Private_Bots") ],
+                    InlineKeyboardButton("Updates Channel 💞" ,url=f"https://t.me/bot_hub_telegrsm") ],
 [
-                    InlineKeyboardButton("Developer 💀" ,url="https://t.me/Prime_Hritu") ],
+                    InlineKeyboardButton("Developer 💀" ,url="https://t.me/sandeep_library") ],
 [
-                    InlineKeyboardButton("Source Code 👀" ,url="https://github.com/Prime-Hritu/image2pdf-Bot") ]
+                    InlineKeyboardButton("Source Code 👀" ,url="https://t.me/sandeep0132") ]
                  ]        ) )
 
 
@@ -63,7 +63,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click here 👉 /convert\n\nReport Error @PrivateHelpXBot** ")
+ await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click here 👉 /convert\n\nReport Error @bot_hub_telegram** ")
  
 
 @app.on_message(filters.command(['convert']))
@@ -79,7 +79,7 @@ async def done(client,message):
  path = f"{message.from_user.id}" + ".pdf"
  images[0].save(path, save_all = True, append_images = images[1:])
  
- await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here your pdf !!")
+ await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here your PDFs by @bot_hub_telegram!!")
  os.remove(path)
 
 app.run()
