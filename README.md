@@ -10,7 +10,7 @@ API_HASH = Your API_HASH from https://my.telegram.org/apps
 # Deploy Method :
 ## Heroku :
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Prime-Hritu/image2pdf-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sandeep0132/image2pdf-Bot)
 
 ## Termux :
 ```
